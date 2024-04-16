@@ -3,3 +3,122 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
+
+.header {
+/*display: grid;
+grid-template-areas:
+    "buttons"
+    "title"
+    "description";
+grid-template-rows: 1fr min-content 1fr;
+grid-template-columns: 1fr;*/
+position: relative;
+padding: 10px;
+background-image: url("../images/cover-image-dark.png");
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.header__rec {
+position: absolute;
+display: flex;
+align-items: center;
+gap: 10px;
+top: 10px;
+right: 19px;
+font-family: 'IBM Plex mono', Arial, sans-serif;
+font-size: 18px;
+line-height: 25px;
+color: var(--decor-item-dot-color);
+font-weight: normal;
+}
+
+.header__rec::after {
+  content: "";
+  display: flex;
+  width: 9px;
+  height: 9px;
+  background-color: var(--decor-item-dot-color);
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 2px var(--decor-item-dot-color);
+}
+
+.header::after {
+ content: "";
+ display: flex;
+ position: absolute;
+ width: 25px;
+ height: 25px;
+ border-inline-start: 1px solid var(--accent-color);
+ border-block-end: 1px solid var(--accent-color);
+ left: 0px;
+ bottom: 0px;
+ margin-bottom: 10px;
+ margin-left: 10px;
+ }
+
+.header::before {
+  content: "";
+  display: flex;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--accent-color);
+  top: 0px;
+  right: 0px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.header__title {
+grid-area: title;
+font-family: 'IBM Plex mono', Arial, sans-serif;
+font-weight: bold;
+font-size: 116px;
+line-height: 95.7px;
+color: var(--header-title-color);
+text-shadow: 4px 4px 0 var(--accent-color);
+margin-top: 65px;
+margin-bottom: 36px;
+}
+
+.header__discription {
+grid-area: description;
+font-family: 'IBM Plex mono', Arial, sans-serif;
+font-weight: bold;
+font-size: 18px;
+line-height: 23.4px;
+color: var(--title-color);
+margin-bottom: 66px;
+}
+
+.title-decor {
+background-color: var(--title-decor-color);
+}
+
+.header__theme-menu {
+grid-area: buttons;
+display: flex;
+justify-content: end;
+margin-top: 75px;
+}
+
+.header__theme-menu-button {
+background-color: transparent;
+font-family: 'IBM Plex mono', Arial, sans-serif;
+font-size: 18px;
+font-weight: normal;
+border: none;
+text-transform: lowercase;
+color: var(--theme-buttons-color);
+padding: 1.5px 13px;
+}
+
+.header__theme-menu-item:not(:last-child) {
+margin-bottom: 10px;
+}
+
+.header__theme-menu-button_active {
+border: 1px solid #FF0070;
+}
