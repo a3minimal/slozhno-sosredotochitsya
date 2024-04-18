@@ -4,6 +4,25 @@
   переключая тему
 */
 
+:root.theme_dark {
+  --decor-item-dot-color: #FF0070;
+  --accent-color: #FF0070;
+  --header-title-color: #DB00FF;
+  --title-color: #000028;
+  --title-decor-color: #FF0070;
+  --theme-buttons-color: #FF0070;
+  --question-title-color: #FF0070;
+  --text-title-color: #000028;
+  --text-title-background-color: #FF0070;
+  --text-paragraph-color: #F1B2CE;
+  --text-link-color: #FF0070;
+  --border-link-color: #F1B2CE;
+  --text-footer-color: #DB00FF;
+  --theme-button-hover-color: rgba(255, 0, 112, 0.4);
+  --theme-button-focus-color: #FF0070;
+  --theme-menu-button_active-color: #FF0070;
+}
+
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
