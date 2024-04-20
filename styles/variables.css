@@ -4,6 +4,7 @@
 */
 
 :root {
+  --body-background-color: #000028;
   --decor-item-dot-color: #FF0070;
   --accent-color: #FF0070;
   --header-title-color: #DB00FF;
@@ -14,7 +15,7 @@
   --text-title-color: #000028;
   --text-title-background-color: #FF0070;
   --text-paragraph-color: #F1B2CE;
-  --text-link-color: #FF0070;
+  --text-link-shadow: #FF0070;
   --border-link-color: #F1B2CE;
   --text-footer-color: #DB00FF;
   --theme-button-hover-color: rgba(255, 0, 112, 0.4);

@@ -4,19 +4,20 @@
   переключая тему
 */
 
-:root.theme_light {
+:root .page.theme_light {
+  --body-background-color: #FFF1F7;
   --accent-color: #FF8DCB;
   --header-title-color: #FFC2E6;
   --title-color: #353430;
   --title-decor-color: #FF8DCB;
   --theme-buttons-color: #353430;
-  --question-title-color: #FF0070;
-  --text-title-color: #000028;
-  --text-title-background-color: #FF0070;
-  --text-paragraph-color: #F1B2CE;
-  --text-link-color: #FF0070;
-  --border-link-color: #F1B2CE;
-  --text-footer-color: #DB00FF;
+  --question-title-color: #353430;
+  --text-title-color: #353430;
+  --text-title-background-color: #FF8DCB;
+  --text-paragraph-color: #353430;
+  --text-link-shadow: #FF8DCB;
+  --border-link-color: #353430;
+  --text-footer-color: #FFC2E6;
   --theme-button-hover-color: rgba(50, 49, 45, 0.4);
   --theme-button-focus-color: #353430;
   --theme-menu-button_active-color: #353430;  
@@ -25,23 +26,32 @@
 
 
 @media (prefers-color-scheme: light) {
-:root.theme_auto {
+:root .page.theme_auto {
       /* Дублируем переменные светлой темы */  
-      --accent-color: #FF8DCB;
-      --header-title-color: #FFC2E6;
-      --title-color: #353430;
-      --title-decor-color: #FF8DCB;
-      --theme-buttons-color: #353430;
-      --question-title-color: #FF0070;
-      --text-title-color: #000028;
-      --text-title-background-color: #FF0070;
-      --text-paragraph-color: #F1B2CE;
-      --text-link-color: #FF0070;
-      --border-link-color: #F1B2CE;
-      --text-footer-color: #DB00FF;
-      --theme-button-hover-color: rgba(50, 49, 45, 0.4);
-      --theme-button-focus-color: #353430;
-      --theme-menu-button_active-color: #353430;    
+  --body-background-color: #FFF1F7;
+  --accent-color: #FF8DCB;
+  --header-title-color: #FFC2E6;
+  --title-color: #353430;
+  --title-decor-color: #FF8DCB;
+  --theme-buttons-color: #353430;
+  --question-title-color: #353430;
+  --text-title-color: #353430;
+  --text-title-background-color: #FF8DCB;
+  --text-paragraph-color: #353430;
+  --text-link-shadow: #FF8DCB;
+  --border-link-color: #353430;
+  --text-footer-color: #FFC2E6;
+  --theme-button-hover-color: rgba(50, 49, 45, 0.4);
+  --theme-button-focus-color: #353430;
+  --theme-menu-button_active-color: #353430;    
+  }
+
+  .page.theme_auto .header {
+    background-image: url("../images/cover-image-light.png");
+  }
+
+  .page.theme_auto .header__rec {
+    display: none;
   }
 }
 
@@ -63,8 +73,3 @@
   display: none;
 }
 
-@media (prefers-color-scheme: light) {
-.page.theme_auto .header {
-  background-image: url("../images/cover-image-light.png");
-}
-}
