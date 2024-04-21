@@ -74,7 +74,7 @@ line-height: 95.7px;
 color: var(--header-title-color);
 text-shadow: 4px 4px 0 var(--accent-color);
 margin-top: 65px;
-margin-bottom: 36px;
+margin-bottom: 56px;
 }
 
 .header__discription {
@@ -83,7 +83,7 @@ font-weight: bold;
 font-size: 18px;
 line-height: 23.4px;
 color: var(--title-color);
-margin-bottom: 66px;
+margin-bottom: 55px;
 }
 
 .title-decor {
@@ -93,7 +93,7 @@ background-color: var(--title-decor-color);
 .header__theme-menu {
 display: flex;
 justify-content: end;
-margin-top: 75px;
+margin-top: 60px;
 }
 
 .header__theme-menu-button {
@@ -161,6 +161,10 @@ pointer-events: none
   margin-bottom: 20px;
 }
 
+.article-container .article-container__item:not(:last-child) .text-paragraph {
+  margin-bottom: 20px;
+}
+
 .text-paragraph {
   font-family: 'IBM Plex mono', Arial, sans-serif;
   font-size: 18px;
@@ -215,6 +219,7 @@ pointer-events: none
   align-items: center;
   min-height: 668px;
   padding: 0px 10px;
+  margin-top: 40px;
 }
 
 .footer-title {
@@ -234,7 +239,7 @@ pointer-events: none
 }
 
 .header__theme-menu {
-  margin-top: 146px;
+  margin-top: 168px;
 }
 
 .header__title {
@@ -243,9 +248,13 @@ pointer-events: none
 }
 
 .header__discription {
-  width: 50%;
+  width: 364px;
   margin-left: auto;
-  margin-bottom: 183px;
+  margin-bottom: 175px;
+}
+
+.article {
+  margin-bottom: 79px;
 }
 
 .article:first-child {
@@ -264,6 +273,10 @@ pointer-events: none
 
 .question-title {
   max-width: 236px;
+}
+
+.gallery-text-title {
+  margin-bottom: 20px;
 }
 
 .gallery-container {
@@ -306,6 +319,7 @@ pointer-events: none
 .footer {
   min-height: 1024px;
   padding: 0 20px;
+  margin-top: 60px;
 }
 
 .header::before, .footer::before {
@@ -325,6 +339,11 @@ pointer-events: none
 }
 
 @media screen and (min-width: 1024px) {
+.header {
+  padding-right: 0px;
+  padding-top: 18px;
+}
+
  .header__theme-menu {
   margin-top: 0px;
   justify-content: center;
@@ -332,15 +351,19 @@ pointer-events: none
 
 .header__theme-menu-list {
   display: flex;
+  gap: 10px;
 }
 
 .header__title {
-  margin-top: 273px;
-  margin-bottom: 114px;
+  font-size: 157px;
+  margin-top: 281px;
+  margin-bottom: 130px;
 }
 
 .header__discription {
-  margin-bottom: 134px;
+  width: 491px;
+  margin-bottom: 125px;
+  margin-right: 20px;
 }
 
 .question-title {
@@ -361,16 +384,18 @@ pointer-events: none
   margin-bottom: 80px;
 }
 
-.text-title:last-of-type {
-  margin-bottom: 20px;
-}
-
 .gallery-container {
   grid-template-rows: 260px 315px 428px;
   margin-bottom: 60px;
 }
 
 .footer {
-  min-height: 768px;
+   min-height: 768px;
+   margin-top: 64px;
 }
+
+.footer-title {
+  font-size: 157px;
+}
+
 }
