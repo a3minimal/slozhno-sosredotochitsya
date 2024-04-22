@@ -23,8 +23,6 @@
   --theme-menu-button_active-color: #353430;
 }
 
-
-
 @media (prefers-color-scheme: light) {
   :root .page.theme_auto {
     /* Дублируем переменные светлой темы */
@@ -46,7 +44,7 @@
     --theme-menu-button_active-color: #353430;
   }
 
-  .page.theme_auto .header {
+  .page.theme_auto {
     background-image: url("../images/cover-image-light.png");
   }
 
@@ -55,9 +53,6 @@
   }
 }
 
-
-
-
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -65,7 +60,7 @@
   */
 }
 
-.page.theme_light .header {
+.page.theme_light {
   background-image: url("../images/cover-image-light.png");
 }
 

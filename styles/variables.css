@@ -21,5 +21,6 @@
   --theme-button-hover-color: rgba(255, 0, 112, 0.4);
   --theme-button-focus-color: #FF0070;
   --theme-menu-button_active-color: #FF0070;
+  --font-ibm-plex-mono: 'IBM Plex mono', Arial, sans-serif;
 }
 
